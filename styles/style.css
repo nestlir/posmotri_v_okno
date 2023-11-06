@@ -39,11 +39,11 @@ video {
 .page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
   color: #FFF;
   background-color: #000;
   background-color: #1b1919;
@@ -219,13 +219,13 @@ video {
 }
 
 .title {
+  text-align: start;
   color: #FFF;
   font-family: 'Oswald',sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
   line-height: 94%;
-  text-align: start;
   text-transform: uppercase;
 }
 
@@ -304,8 +304,8 @@ video {
 
 .content__video-card {
   display: flex;
-  justify-content: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .content__video-card-description-container {
@@ -338,7 +338,7 @@ video {
 }
 
 .preloader {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
