@@ -37,11 +37,13 @@ video {
 
 
 .page {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 140px 30px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
   color: #FFF;
   background-color: #000;
   background-color: #1b1919;
@@ -223,6 +225,7 @@ video {
   font-size: 75px;
   font-style: normal;
   line-height: 94%;
+  text-align: start;
   text-transform: uppercase;
 }
 
@@ -301,6 +304,7 @@ video {
 
 .content__video-card {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
