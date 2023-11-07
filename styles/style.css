@@ -39,11 +39,11 @@ video {
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
   color: #FFF;
   background-color: #000;
   background-color: #1b1919;
@@ -63,7 +63,6 @@ video {
   gap: 10px;
   align-self: flex-start;
   color: #FFFFFF;
-  color: #FFFFFFB2;
 }
 
 .result__video-container {
@@ -85,7 +84,7 @@ video {
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Raleway', 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -99,7 +98,7 @@ video {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Raleway','Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -128,7 +127,7 @@ video {
   border-bottom: 1px solid #fff;
   outline: none;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Raleway','Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-align: start;
@@ -159,7 +158,7 @@ video {
   border: 1px solid #FFF;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
   content: "";
   display: block;
   width: 15px;
@@ -183,7 +182,7 @@ video {
   height: 34px;
   border: 1px solid #FFF;
   color: #FFFFFF;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family:'Raleway', 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -214,18 +213,14 @@ video {
   width: 399px;
 }
 
-.content__accent {
-  color: #545050;
-}
-
 .title {
-  text-align: start;
   color: #FFF;
-  font-family: 'Oswald',sans-serif;
+  font-family: 'Raleway','Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
   line-height: 94%;
+  text-align: start;
   text-transform: uppercase;
 }
 
@@ -304,8 +299,8 @@ video {
 
 .content__video-card {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
 }
 
 .content__video-card-description-container {
@@ -316,18 +311,24 @@ video {
 }
 
 .content__video-card-title {
-  margin: 10px 0;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 400px;
-  font-size: 18px;
-  font-size: 24px;
-  line-height: 1.2;
+  color: #FFF;
+  font-family: 'Raleway','Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  gap: 6px;
 }
 
 .content__video-card-description {
+  color: #FFF;
+  font-family: 'Raleway','Fira Sans Condensed', sans-serif;
   font-weight: 400;
-  line-height: 90%;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 16.2px;
+  /* 90% */
 }
 
 .content__video-card-thumbnail {
