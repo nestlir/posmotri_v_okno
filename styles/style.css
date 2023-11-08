@@ -62,14 +62,13 @@ video {
   flex-direction: column;
   gap: 10px;
   align-self: flex-start;
+  margin-top: 78px;
   color: #FFFFFF;
 }
 
 .result__video-container {
-  position: relative;
   width: 711px;
   min-height: 386px;
-  margin-top: 78px;
   object-fit: cover;
 }
 
