@@ -141,6 +141,7 @@ video {
 
 .search-form__checkbox {
   align-items: center;
+  align-items: flex-end;
   gap: 5px;
   width: 100%;
   cursor: pointer;
@@ -169,7 +170,7 @@ video {
 }
 
 .search-form__submit-button {
-  align-self: flex-end;
+  margin-top: auto;
   width: 100%;
 }
 
