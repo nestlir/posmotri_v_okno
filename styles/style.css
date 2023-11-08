@@ -60,7 +60,7 @@ video {
 .result {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   align-self: flex-start;
   margin-top: 78px;
   color: #FFFFFF;
