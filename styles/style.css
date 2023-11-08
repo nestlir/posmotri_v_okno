@@ -79,18 +79,9 @@ video {
 }
 
 /* Search form */
-.input {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-  width: 225px;
-  height: 27px;
-}
-
 .search-form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 40px;
   font-family: 'Fira Sans Condensed', 'Oswald', sans-serif;
