@@ -111,7 +111,7 @@ video {
   cursor: pointer;
 }
 
-.search-form__label:has(:focus-visible) {
+.search-form__label:focus {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
