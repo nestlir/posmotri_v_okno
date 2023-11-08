@@ -79,6 +79,14 @@ video {
 }
 
 /* Search form */
+.input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 225px;
+  height: 27px;
+}
 
 .search-form {
   display: flex;
@@ -169,8 +177,8 @@ video {
 }
 
 .search-form__submit-button {
-  margin-top: auto;
   width: 100%;
+  margin-top: auto;
 }
 
 /* Кнопки */
@@ -184,7 +192,7 @@ video {
   height: 34px;
   border: 1px solid #FFF;
   color: #FFFFFF;
-  font-family:'Fira Sans Condensed', 'Oswald', sans-serif;
+  font-family: 'Fira Sans Condensed', 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
