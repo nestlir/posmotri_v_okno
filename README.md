@@ -1,39 +1,44 @@
-# Посмотри в окно — Responsive Interface
+# Посмотри в окно
 
-> Editorial-style frontend project focused on responsive composition, media and theme-aware UI.
+Интерактивное frontend-приложение для поиска и просмотра видео по городу и времени суток.
 
-[**Live demo →**](https://nestlir.github.io/posmotri_v_okno/)
+## Live demo
 
-## Overview
+https://nestlir.github.io/posmotri_v_okno/
 
-A responsive web interface built from a visual specification. The project focuses on translating a strong editorial art direction into semantic markup, flexible layout rules and a consistent visual hierarchy.
+## What it demonstrates
 
-## What I demonstrated
-
-- responsive, mobile-first thinking;
-- CSS Grid and Flexbox layout;
-- typography, spacing and visual hierarchy;
-- image handling and adaptive media;
-- component-like CSS organization;
-- implementation accuracy against a supplied design.
-
-## Engineering focus
-
-The main challenge was not simply reproducing a desktop screenshot, but preserving the intended composition and readability as the available space changes.
+- работа с внешним API;
+- поиск и фильтрация данных;
+- переключение основного видео по карточке;
+- loading и error states;
+- responsive layout;
+- semantic HTML и keyboard navigation;
+- CSS Grid/Flexbox и `object-fit`;
+- современная инфраструктура GitHub Actions и GitHub Pages.
 
 ## Stack
 
-**HTML5 · CSS3 · responsive layout · Git**
+**HTML5 · CSS3 · JavaScript · Fetch API · GitHub Actions · GitHub Pages**
 
 ## Run locally
 
 ```bash
 git clone https://github.com/nestlir/posmotri_v_okno.git
 cd posmotri_v_okno
+npm install
 ```
 
-Open `index.html` or serve the directory with a static HTTP server.
+Откройте проект через локальный HTTP-сервер.
 
-## Context
+## Quality checks
 
-Originally created during frontend training; presented here as a compact case study of responsive interface implementation and visual fidelity.
+```bash
+npm run format
+npm run format:check
+npm run lint:css
+```
+
+## Project context
+
+Первоначально создан как учебный проект. Репозиторий сохранён как кейс развития frontend-практики: исходная функциональность дополнена responsive-правилами, улучшенной обработкой загрузки видео, quality tooling и автоматическим deployment.
