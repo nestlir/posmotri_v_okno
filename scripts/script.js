@@ -117,9 +117,29 @@ async function delay(ms) {
 
 // Промис, который резолвится, если видео целиком готово к проинрыванию без пауз
 
-async function waitForReadyVideo(video) {
-  return await new Promise((resolve) => {
-    video.oncanplaythrough = resolve;
+function waitForReadyVideo(video) {
+  if (video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+    return Promise.resolve();
+  }
+
+  return new Promise((resolve, reject) => {
+    const cleanup = () => {
+      video.removeEventListener('canplaythrough', onReady);
+      video.removeEventListener('error', onError);
+    };
+
+    const onReady = () => {
+      cleanup();
+      resolve();
+    };
+
+    const onError = () => {
+      cleanup();
+      reject(new Error('video-load-error'));
+    };
+
+    video.addEventListener('canplaythrough', onReady, { once: true });
+    video.addEventListener('error', onError, { once: true });
   });
 }
 
@@ -187,7 +207,7 @@ function generateFilterRequest(endpoint, city, timeArray) {
   if (city) {
     endpoint += `filters[city][$containsi]=${city}&`;
   }
-  if (timeArray) {
+  if (timeArray.length > 0) {
     timeArray.forEach((timeslot) => {
       endpoint += `filters[time_of_day][$eqi]=${timeslot}&`;
     });
